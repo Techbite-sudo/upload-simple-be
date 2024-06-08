@@ -1,0 +1,36 @@
+directive @goField(
+  forceResolver: Boolean
+  name: String
+) on INPUT_FIELD_DEFINITION | FIELD_DEFINITION
+
+scalar Time
+
+
+
+type Mutation {
+  uploadVideo(input: UploadVideoInput!): Video!
+}
+
+type Query {
+  videos: [Video!]!
+  video(id: String!): Video!
+}
+
+type Video {
+  id: String!
+  title: String!
+  description: String!
+  duration: Int!
+  thumbnailUrl: String!
+  videoUrl: String!
+  createdAt: Time!
+  updatedAt: Time!
+}
+
+input UploadVideoInput {
+  title: String!
+  description: String!
+  duration: Int!
+  thumbnailUrl: String!
+  file: String!
+}

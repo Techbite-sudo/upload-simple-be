@@ -4,10 +4,10 @@ go 1.20
 
 require (
 	github.com/99designs/gqlgen v0.17.48
-	github.com/cloudinary/cloudinary-go v1.7.0
 	github.com/gofiber/fiber/v2 v2.52.4
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/joho/godotenv v1.5.1
+	github.com/robfig/cron v1.2.0
 	github.com/satori/go.uuid v1.2.0
 	github.com/valyala/fasthttp v1.54.0
 	github.com/vektah/gqlparser/v2 v2.5.12
@@ -20,9 +20,7 @@ require (
 	github.com/agnivade/levenshtein v1.1.1 // indirect
 	github.com/andybalholm/brotli v1.1.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
-	github.com/creasty/defaults v1.5.1 // indirect
 	github.com/google/uuid v1.6.0 // indirect
-	github.com/gorilla/schema v1.2.0 // indirect
 	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
